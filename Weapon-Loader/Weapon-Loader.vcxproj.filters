@@ -15,36 +15,55 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tasking-Indirect-Syscalls.cpp">
+    <ClCompile Include="src\Tasking-Indirect-Syscalls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utilities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Hashing.hpp">
+    <ClInclude Include="include\Hashing.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Tasking-Indirect-Syscalls.hpp">
+    <ClInclude Include="include\Tasking-Indirect-Syscalls.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utilities.hpp">
+    <ClInclude Include="include\Utilities.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FunctionPointers.hpp">
+    <ClInclude Include="include\FunctionPointers.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Main.hpp">
+    <ClInclude Include="include\Main.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Structures.hpp">
+    <ClInclude Include="include\Structures.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Macro.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="Stub.asm">
+    <MASM Include="src\Stub.asm">
       <Filter>Source Files</Filter>
     </MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="payload\Resource.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="payload\rawdata.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

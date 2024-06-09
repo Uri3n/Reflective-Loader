@@ -15,21 +15,24 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dllmain.cpp">
+    <ClCompile Include="src\Dllmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Dllmain.hpp">
+    <ClInclude Include="include\Dllmain.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Hashing.hpp">
+    <ClInclude Include="include\Hashing.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FunctionPointers.hpp">
+    <ClInclude Include="include\FunctionPointers.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Structures.hpp">
+    <ClInclude Include="include\Structures.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Macro.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

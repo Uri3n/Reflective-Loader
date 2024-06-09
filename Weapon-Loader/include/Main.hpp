@@ -1,0 +1,13 @@
+#pragma once
+#include <iostream>
+#include <cstdint>
+#include <Windows.h>
+#include <winternl.h>
+#include <array>
+#include "Hashing.hpp"
+#include "resource.h"
+#include "Structures.hpp"
+#include "Utilities.hpp"
+#include "FunctionPointers.hpp"
+#include "Macro.hpp"
+#include "Utilities.hpp"

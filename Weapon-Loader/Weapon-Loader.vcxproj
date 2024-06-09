@@ -121,6 +121,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <WholeProgramOptimization>false</WholeProgramOptimization>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,26 +131,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Tasking-Indirect-Syscalls.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Tasking-Indirect-Syscalls.cpp" />
+    <ClCompile Include="src\Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FunctionPointers.hpp" />
-    <ClInclude Include="Main.hpp" />
-    <ClInclude Include="resource.h" />
-    <ClInclude Include="Structures.hpp" />
-    <ClInclude Include="Utilities.hpp" />
-    <ClInclude Include="Hashing.hpp" />
-    <ClInclude Include="Tasking-Indirect-Syscalls.hpp" />
+    <ClInclude Include="include\FunctionPointers.hpp" />
+    <ClInclude Include="include\Macro.hpp" />
+    <ClInclude Include="include\Main.hpp" />
+    <ClInclude Include="include\resource.h" />
+    <ClInclude Include="include\Structures.hpp" />
+    <ClInclude Include="include\Utilities.hpp" />
+    <ClInclude Include="include\Hashing.hpp" />
+    <ClInclude Include="include\Tasking-Indirect-Syscalls.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <MASM Include="Stub.asm" />
+    <MASM Include="src\Stub.asm" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Resource.rc" />
+    <ResourceCompile Include="payload\Resource.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="rawdata.ico" />
+    <Image Include="payload\rawdata.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
