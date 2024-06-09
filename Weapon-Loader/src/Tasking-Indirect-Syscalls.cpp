@@ -7,12 +7,12 @@ extern "C" NTSTATUS SyscallGeneric(...);
 
 
 static std::map<std::uint32_t, void*>	g_Hashes;
-static std::vector<void*>				g_OrderedZw;
-static std::vector<void*>				g_UnorderedNt;
-static bool								g_InitComplete = false;
+static std::vector<void*>		g_OrderedZw;
+static std::vector<void*>		g_UnorderedNt;
+static bool				g_InitComplete = false;
 
-static volatile unsigned char			g_SyscallOpcodeFirst = 0x16;				//16 ^ 25 = 0x0F
-static volatile unsigned char			g_SyscallOpcodeSecond = 0x1C;				//1C ^ 25 = 0x05
+static volatile unsigned char		g_SyscallOpcodeFirst = 0x16;				//16 ^ 25 = 0x0F
+static volatile unsigned char		g_SyscallOpcodeSecond = 0x1C;				//1C ^ 25 = 0x05
 
 CREATEHASHW(ntdll);
 CREATEHASHA(AllocateVirtualMemory);
